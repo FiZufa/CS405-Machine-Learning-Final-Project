@@ -43,7 +43,7 @@ The dataset distribution can be observed as following.
 ![dataset distribution](imgs/datasets(1).png)
 
 ### Models 
-This project will utilize [YOLO v8](https://github.com/haermosi/yolov8) (You Look Only Once version 8) pretrained model to detect and recognize traffic-sign. This model implemented neural network architecture which consist three parts: (1) Backbone Network, (2) Neck and Head Structures, and (3) Detection Head. The models to be experimented are as follow: 
+This project will utilize [YOLO v8](https://github.com/haermosi/yolov8) (You Only Look Once version 8) pretrained model to detect and recognize traffic-sign. This model implemented neural network architecture which consist three parts: (1) Backbone Network, (2) Neck and Head Structures, and (3) Detection Head. The models to be experimented are as follow: 
 
 🟨**YOLO v8n**: This model is the most lightweight and rapid in the YOLOv8 series, designed for environments with limited computational resources. YOLOv8n achieves its compact size, approximately 2 MB in INT8 format and around 3.8 MB in FP32 format, by leveraging optimized convolutional layers and a reduced number of parameters. 
 
