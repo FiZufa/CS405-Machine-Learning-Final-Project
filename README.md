@@ -38,10 +38,12 @@ The datasets used are specified as follow:
     - Added more traffic signs in a certain class to see the effect of class balance/ imbalance.
     - Added some data augmentation to certain classes for allowing machine to learn more complex patterns.
     
+The dataset distribution can be observed as following.
 
+![dataset distribution](imgs/datasets(1).png)
 
 ### Models 
-This project will utilize [Yolov8](https://github.com/haermosi/yolov8) (You Look Only Once version 8) pretrained model to detect and recognize traffic-sign. This model implemented neural network architecture which consist three parts: (1) Backbone Network, (2) Neck and Head Structures, and (3) Detection Head. The models to be experimented are as follow: 
+This project will utilize [YOLO v8](https://github.com/haermosi/yolov8) (You Look Only Once version 8) pretrained model to detect and recognize traffic-sign. This model implemented neural network architecture which consist three parts: (1) Backbone Network, (2) Neck and Head Structures, and (3) Detection Head. The models to be experimented are as follow: 
 
 🟨**YOLO v8n**: This model is the most lightweight and rapid in the YOLOv8 series, designed for environments with limited computational resources. YOLOv8n achieves its compact size, approximately 2 MB in INT8 format and around 3.8 MB in FP32 format, by leveraging optimized convolutional layers and a reduced number of parameters. 
 
@@ -56,13 +58,15 @@ where accuracy is paramount, but computational resources are still a concern
 🟩**YOLO v8l**: Boasts approximately 55 million parameters, designed for applications that demand higher precision. It employs a more complex feature extraction process with additional layers and a refined attention mechanism, improving the detection of smaller and more intricate objects in high-resolution images.
 
 ## Experimental Setup
-- **Experiment-0**: YOLO V8s + Dataset-0
-- **Experiment-1**: YOLO V8l + Dataset-0
-- **Experiment-2**: YOLO V8l + Dataset-1
-- **Experiment-3**: YOLO V8l + Dataset-2
-- **Experiment-4**: YOLO V8n + Custom Dataset
-- **Experiment-5**: YOLO V8s + Custom Dataset
+The models will be experimented with following datasets.
+- **Experiment-0**: 🟦YOLO V8s + Dataset-0
+- **Experiment-1**: 🟩YOLO V8l + Dataset-0
+- **Experiment-2**: 🟩YOLO V8l + Dataset-1
+- **Experiment-3**: 🟩YOLO V8l + Dataset-2
+- **Experiment-4**: 🟨YOLO V8n + Custom Dataset
+- **Experiment-5**: 🟦YOLO V8s + Custom Dataset
 
+In addition, we will test the model to the video stream we recorded around campus.
 ### Training Resources
 In this experiment, because of the large datasets that require much time and resources to train and test the model, we will use Google Collab to train our ML model. Initially, we used the Tesla 4 (T4) GPU to train the
 model. However, as the limit of time and the datasets are large, we decided to upgrade the GPU for faster training. The GPU we use for this time is the **NVIDIA A100**.
@@ -71,5 +75,7 @@ model. However, as the limit of time and the datasets are large, we decided to u
 Evaluated models using: **confusion matrix**, **recall**, and **precision**.
 
 ## Results
+
+
 
 
