@@ -90,8 +90,52 @@ Evaluated models using: **confusion matrix**, **recall**, and **precision**.
 - **Experiment-5**: 🟦YOLO V8s + Custom Dataset
 ![result-5](imgs/5.png)
 
-Additionally, we tested the model in the stream video we recorded around campus.
+Additionally, we tested the model in the stream video we recorded around campus. Here are results on some footages of the videos.
 
+- Footage 1
+![Footage 1](imgs/footage1.png)
+- Footage 2
+![Footage 2](imgs/footage2.png)
+- Footage 3
+![Footage 3](imgs/footage3.png)
+- Footage 4
+![Footage 4](imgs/footage4.png)
+
+## Conclusion
+
+### Analysis
+- 🟦YOLOv8m
+    - Trained on Custom Dataset of 1001 images.
+    - Outperformed smaller models.
+    - Demonstrated strong accuracy in identifying traffic signs in videos.
+    - Highlights the effectiveness of larger models for video and image understanding.
+- 🟩YOLO8l
+    - Initially trained on a custom dataset of 7092 images with preprocessing.
+    - Exhibited false positives and negatives in video testing, likely due to dataset imbalance favoring majority classes.
+    - Training on a smaller custom dataset of 4128 images with additional preprocessing and augmentation improved performance.
+    - Despite improvements, some traffic signs were still misclassified.
+
+### Key Observations
+- Larger models like YOLOv8l can struggle with traffic sign detection in videos without adequate preprocessing and augmentation.
+- Dataset quality and balance significantly impact model performance.
+- Augmentation and preprocessing enhance performance but don’t fully address misclassification issues.
+
+### Conclusion
+- YOLOv8m performs well overall.
+- YOLOv8l shows promise with augmentation and preprocessing but requires further refinement.
+- Addressing overfitting and exploring the impact of dataset characteristics can improve model reliability and accuracy.
+
+## References
+1. Ultralytics. (n.d.). Ultralytics GitHub repository. Retrieved from https://github.com/ultralytics/ultralytics?ref=blog.roboflow.com
+2. Roboflow. (2023). What's new in YOLOv8? Retrieved from https://blog.roboflow.com/whats-new-in-yolov8/#:~:text=YOLOv8%20was%20launched%20on%20January%2010th%2C%202023
+3. Ultralytics. (n.d.). Ultralytics documentation. Retrieved from https://docs.ultralytics.com/
+4. Roboflow. (n.d.). What is an anchor box? Retrieved from https://blog.roboflow.com/what-is-an-anchor-box/
+5. Bochkovskiy, A., Wang, C.-Y., & Liao, H.-Y. M. (2020). YOLOv4: Optimal speed and accuracy of object detection. arXiv. Retrieved from https://arxiv.org/abs/2007.14917
+6. Yasin, M. (2024). What is YOLOv8: An In-Depth Exploration of the Internal Features of the Next-Generation Object Detector. Retrieved from https://arxiv.org/abs/2408.15857
+
+
+    
+    
 
 
 
