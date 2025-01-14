@@ -66,7 +66,7 @@ The models will be experimented with following datasets.
 - **Experiment-4**: 🟨YOLO V8n + Custom Dataset
 - **Experiment-5**: 🟦YOLO V8s + Custom Dataset
 
-In addition, we will test the model to the video stream we recorded around campus.
+In addition, we will test the model to the video stream we recorded around campus with 🟪YOLO v8m.
 ### Training Resources
 In this experiment, because of the large datasets that require much time and resources to train and test the model, we will use Google Collab to train our ML model. Initially, we used the Tesla 4 (T4) GPU to train the
 model. However, as the limit of time and the datasets are large, we decided to upgrade the GPU for faster training. The GPU we use for this time is the **NVIDIA A100**.
@@ -75,6 +75,22 @@ model. However, as the limit of time and the datasets are large, we decided to u
 Evaluated models using: **confusion matrix**, **recall**, and **precision**.
 
 ## Results
+
+- **Experiment-0**: 🟦YOLO V8s + Dataset-0
+![result-0](imgs/0.png)
+- **Experiment-1**: 🟩YOLO V8l + Dataset-0
+![result-0](imgs/1.png)
+- **Experiment-2**: 🟩YOLO V8l + Dataset-1
+![result-0](imgs/2.png)
+- **Experiment-3**: 🟩YOLO V8l + Dataset-2
+![result-0](imgs/3.png)
+- **Experiment-4**: 🟨YOLO V8n + Custom Dataset
+![result-0](imgs/4.png)
+- **Experiment-5**: 🟦YOLO V8s + Custom Dataset
+![result-0](imgs/5.png)
+
+Additionally, we tested the model in the stream video we recorded around campus.
+
 
 
 
