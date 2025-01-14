@@ -33,6 +33,12 @@ The datasets used are specified as follow:
     - Number of data: 4845 images
     - Dataset splitting: 71% training set, 19% cross-validation set, and 10% test set.
 4. **Custom dataset**: 
+    - Combined traffic sign datasets from CIFAR, NLPR, and several Roboflow projects.
+    - Deleted some not commonly used signs.
+    - Added more traffic signs in a certain class to see the effect of class balance/ imbalance.
+    - Added some data augmentation to certain classes for allowing machine to learn more complex patterns.
+    
+
 
 ### Models 
 This project will utilize [Yolov8](https://github.com/haermosi/yolov8) pretrained model to detect and recognize traffic-sign. This model implemented neural network architecture which consist three parts: (1) Backbone Network, (2) Neck and Head Structures, and (3) Detection Head. The models to be experimented are as follow: 
